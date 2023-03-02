@@ -1,0 +1,53 @@
+*{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    height:98.5%;
+    width: 99.3%;
+    border-radius: 20px;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.grid_container{
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-areas: 
+        "ej1 ej5"
+        "ej2 ej5"
+        "ej3 ej5"
+        "ej4 ej5"
+    ;
+    grid-gap: 1%;
+}
+.grid_container div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grid_container a{
+    box-shadow: inset 5px 5px 5px 5px rgb(105, 69, 1);
+}
+.grid_container a:hover{
+    background: rgb(160, 104, 1);
+}
+.ej1{
+    background: orange;
+    grid-area: ej1;
+}
+.ej2{
+    background: orange;
+    grid-area: ej2;
+}
+.ej3{
+    background: orange;
+    grid-area: ej3;
+}
+.ej4{
+    background: orange;
+    grid-area: ej4;
+}
+.ej5{
+    background: orange;
+    grid-area: ej5;
+}

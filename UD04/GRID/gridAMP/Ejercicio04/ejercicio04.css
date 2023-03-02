@@ -1,6 +1,7 @@
 *{
     padding: 0;
     margin: 0;
+    color: white;
 }
 
 .grid-container{
@@ -18,23 +19,27 @@
 }
 
 .cabecera{
-    background-color: rgb(100, 12, 151);
+    padding: 1%;
+    background-color: rgb(163, 18, 132);
     grid-area: cabecera;
 }
 .izquierda{
+    padding: 1%;
     background-color: rgb(9, 118, 155);
     grid-area: izquierda;
 }
 .centro{
+    padding: 1%;
     background-color: rgb(80, 8, 80);
     grid-area: centro;
 }
 .derecha{
+    padding: 1%;
     background-color: rgb(85, 17, 48) ;
     grid-area: derecha;
 }
 .footer{
- 
+    padding: 1%;
     background-color: rgb(100, 12, 151);
     grid-area: footer;
 }
