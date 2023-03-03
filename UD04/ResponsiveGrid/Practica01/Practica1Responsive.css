@@ -1,0 +1,61 @@
+*{
+    margin: 0px;
+}
+.container{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(5, 20vh);
+    grid-template-areas: 
+        "rojo"
+        "verde"
+        "amarillo"
+        "azul"
+        "naranja"
+    ;
+}
+.rojo{
+    background: red;
+    grid-area: rojo;
+}
+.verde{
+    background: green;
+    grid-area: verde;
+}
+.amarillo{
+    background: yellow;
+    grid-area: amarillo;
+}
+.azul{
+    background: blue;
+    grid-area: azul;
+}
+.naranja{
+    background: orange;
+    grid-area: naranja;
+}
+
+@media (min-width:500px) {
+    .container{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 15vh 35vh 35vh 15vh;
+        grid-template-areas: 
+            "rojo rojo"
+            "verde amarillo"
+            "azul azul"
+            "naranja naranja"
+        ;
+    }
+}
+@media (min-width:1300px) {
+    .container{
+        display: grid;
+        grid-template-columns: repeat(3, 33.33%);
+        grid-template-rows: repeat(3, 33.33vh);
+        grid-template-areas: 
+            "rojo rojo rojo"
+            "verde amarillo azul"
+            "naranja naranja naranja"
+        ;
+    }
+}

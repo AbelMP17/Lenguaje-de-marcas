@@ -1,0 +1,38 @@
+*{
+    margin: 0px;
+    padding:0px;
+}
+.grid_container{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: 
+        "header"
+        "main"
+        "img"
+        "article"
+    ;
+    grid-gap: 2%;
+}
+.contenedor_img{
+    grid-area: img;
+    display: flex;
+    flex-wrap: wrap;
+}
+.contenedor_img img{
+    width: 25vw;
+    height: 25vh;
+}
+header{
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+}
+main{
+    background-color: gray;
+    color: white;
+    grid-area: main;
+}
+article{
+    grid-area: article;
+}
