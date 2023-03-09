@@ -38,7 +38,7 @@ header{
     display: flex;
     justify-content: space-between;
     padding: 5%;
-    padding-bottom: opx;
+    padding-bottom: 2%;
 }
 main{
     background-color: gray;
