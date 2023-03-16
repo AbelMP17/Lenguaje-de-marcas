@@ -1,0 +1,74 @@
+body{
+    margin: 0px;
+    background: lightgray;
+}
+.grid_container{
+    display: grid;
+    grid-template-columns: 20% auto 20%;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+        "nav nav nav"
+        "aside main aside2"
+        "footer footer footer"
+    ;
+}
+main{
+    grid-area: main;
+    padding: 2%;
+}
+article img{
+    float: left;
+}
+article p{
+    text-align: justify;
+}
+nav{
+    grid-area: nav;
+    background: gray;
+}
+ul{
+    list-style: none;
+}
+nav li{
+    display:inline;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+aside{
+    grid-area: aside;
+    background: rgb(45, 116, 45);
+    padding: 1%;
+    color: white;
+}
+aside img{
+    width:100%
+}
+.i{
+    width: 48%;
+}
+.aside2{
+    grid-area: aside2;
+    padding: 2%;
+    background: transparent;
+    color:black;
+}
+
+footer{
+    grid-area: footer;
+    display: flex;
+    background: gray;
+    color: white;
+}
+footer div{
+    margin: 1%;
+}
+
+.direccion{
+    border: 1px red solid;
+    padding: 2%;
+    text-align: justify;
+}
