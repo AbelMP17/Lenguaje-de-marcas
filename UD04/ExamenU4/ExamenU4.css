@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+}
+body{
+    background:  #d5d8e0;
+    padding: 10px;
+}
+.grid_container{
+    display: grid;
+    grid-template-columns: repeat(3,33vw);
+    grid-template-rows: auto 350px 300px auto;
+    grid-template-areas: 
+        "nav nav nav"
+        "roma roma parisBelg"
+        "grecia grecia2 parisBelg"
+        "footer footer footer"
+    ;
+    grid-gap:2vh;
+}
+nav{
+    grid-area: nav;
+    background: blue;
+    border-radius: 5px;
+    padding: 10px;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.roma{
+    grid-area: roma;
+    display: flex;
+    flex-direction:row-reverse;
+    align-items: center;
+    background: #96c0d3;
+    padding: 10px;
+    border-radius: 5px;
+}
+.imgRoma{
+    padding: 10px;
+    background: #FFFFFF80;
+}
+.roma div img{
+    margin: 10px;
+}
+.contenidoRoma{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    margin: 10px;
+}
+.pieRoma{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.grecia{
+    grid-area: grecia;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    background: #96c0d3;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+}
+.grecia div{
+    background: #FFFFFF80;
+    width: 100%;height: 70%;
+    padding: 10px;
+    text-align: center;
+}
+.grecia2{
+    grid-area: grecia2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #96c0d3;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+}
+.grecia21{
+    align-self: flex-start;
+}
+.grecia22{
+    align-self: center;
+}
+.grecia23{
+    align-self: flex-end;
+}
+.parisBelg{
+    grid-area: parisBelg;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background: #96c0d3;
+    padding: 10px;
+    border-radius: 5px;
+    
+}
+.parisBelg div{
+    text-align: center;
+    background: #FFFFFF80;
+    padding: 10px;
+}
+footer{
+    grid-area: footer;
+    display: flex;
+    justify-content: space-between;
+    background: blue;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
