@@ -29,10 +29,9 @@ nav{
 ul{
     list-style: none;
 }
-nav li{
-    display:inline;
-    padding-left: 2%;
-    padding-right: 2%;
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
 }
 a{
     text-decoration: none;
@@ -60,6 +59,7 @@ aside img{
 footer{
     grid-area: footer;
     display: flex;
+    justify-content: space-between;
     background: gray;
     color: white;
 }
